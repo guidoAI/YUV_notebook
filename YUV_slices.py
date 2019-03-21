@@ -86,7 +86,7 @@ def filter_color(image_name = 'DelFly_tulip.jpg', y_low = 50, y_high = 200, \
         for x in range(YUV.shape[1]):
             if(YUV[y,x,0] >= y_low and YUV[y,x,0] <= y_high and \
                YUV[y,x,1] >= u_low and YUV[y,x,1] <= u_high and \
-               YUV[y,x,1] >= v_low and YUV[y,x,1] <= v_high):
+               YUV[y,x,2] >= v_low and YUV[y,x,2] <= v_high):
                 Filtered[y,x] = 1;
     
     plt.figure();
